@@ -47,6 +47,7 @@ class EntrustSeeder extends Seeder
 
         'first_name' => 'Admin',
         'last_name' => 'System',
+        'username' => 'admin',
         'email' => 'admin@boutique.test',
         'email_verified_at' => now(),
         'mobile' => '0123654987',
@@ -63,6 +64,7 @@ class EntrustSeeder extends Seeder
 
         'first_name' => 'Supervisor',
         'last_name' => 'System',
+        'username' => 'supervisor',
         'email' => 'supervisor@boutique.test',
         'email_verified_at' => now(),
         'mobile' => '0123753287',
@@ -79,6 +81,7 @@ class EntrustSeeder extends Seeder
 
         'first_name' => 'Ahmad',
         'last_name' => 'Mohammed',
+        'username' => 'Ahmad93',
         'email' => 'ahmad@yahoo.com',
         'email_verified_at' => now(),
         'mobile' => '01092991713',
@@ -95,6 +98,7 @@ class EntrustSeeder extends Seeder
 
             'first_name' => $faker->firstName,
             'last_name' => $faker->lastName,
+            'username' => $faker->userName,
             'email' => $faker->unique()->safeEmail,
             'email_verified_at' => now(),
             'mobile' => '010929'.$faker->numberBetween(1000000,9999999),
